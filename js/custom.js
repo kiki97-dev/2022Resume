@@ -98,6 +98,7 @@ $(function () {
                         left: pos_arr[index] - scrollCnt
                     });
                 })
+
             }
 
 
