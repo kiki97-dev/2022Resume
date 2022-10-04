@@ -175,7 +175,7 @@ a {
   .portfolio > ul > li {
     position: absolute;
     top: 50%;
-    width: 1500px;
+    width: 1300px;
     height: 700px;
     margin-top: -250px;
     box-sizing: border-box;
@@ -202,46 +202,44 @@ a {
       left: 14500px; }
     .portfolio > ul > li .portfolio_title {
       display: flex;
-      justify-content: flex-start; }
-      .portfolio > ul > li .portfolio_title .description {
-        margin-right: 200px; }
-        .portfolio > ul > li .portfolio_title .description strong {
-          display: inline-block;
+      justify-content: space-between; }
+      .portfolio > ul > li .portfolio_title .description strong {
+        display: inline-block;
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 20px; }
+      .portfolio > ul > li .portfolio_title .description p {
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.6;
+        margin-bottom: 10px; }
+      .portfolio > ul > li .portfolio_title .description span {
+        font-size: 14px;
+        color: #aaa;
+        display: block;
+        margin-bottom: 20px; }
+      .portfolio > ul > li .portfolio_title .description a {
+        display: block;
+        border: 1px solid #fff;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        width: 100px;
+        height: 40px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        transition: all 0.5s; }
+        .portfolio > ul > li .portfolio_title .description a:hover {
+          color: #000;
+          background-color: #fff; }
+      .portfolio > ul > li .portfolio_title .description ul {
+        padding-left: 25px;
+        margin-bottom: 20px; }
+        .portfolio > ul > li .portfolio_title .description ul li {
+          list-style: disc;
           color: #fff;
-          font-size: 40px;
-          margin-bottom: 20px; }
-        .portfolio > ul > li .portfolio_title .description p {
           font-size: 18px;
-          color: #fff;
-          line-height: 1.6;
-          margin-bottom: 10px; }
-        .portfolio > ul > li .portfolio_title .description span {
-          font-size: 14px;
-          color: #aaa;
-          display: block;
-          margin-bottom: 20px; }
-        .portfolio > ul > li .portfolio_title .description a {
-          display: block;
-          border: 1px solid #fff;
-          color: #fff;
-          text-align: center;
-          line-height: 40px;
-          width: 100px;
-          height: 40px;
-          border-radius: 30px;
-          margin-bottom: 30px;
-          transition: all 0.5s; }
-          .portfolio > ul > li .portfolio_title .description a:hover {
-            color: #000;
-            background-color: #fff; }
-        .portfolio > ul > li .portfolio_title .description ul {
-          padding-left: 25px;
-          margin-bottom: 20px; }
-          .portfolio > ul > li .portfolio_title .description ul li {
-            list-style: disc;
-            color: #fff;
-            font-size: 18px;
-            line-height: 2; }
+          line-height: 2; }
       .portfolio > ul > li .portfolio_title .video_box {
         width: 700px;
         height: 463px;
@@ -249,10 +247,22 @@ a {
         display: flex;
         justify-content: center;
         border-radius: 5px; }
-      .portfolio > ul > li .portfolio_title video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%; }
+        .portfolio > ul > li .portfolio_title .video_box.chgim {
+          background-image: url(../img/chgim.JPG);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .portfolio > ul > li .portfolio_title .video_box.dandydillway {
+          background-image: url(../img/dandydillway.JPG);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .portfolio > ul > li .portfolio_title .video_box.sd {
+          background-image: url(../img/sd.JPG);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .portfolio > ul > li .portfolio_title .video_box video {
+          object-fit: cover;
+          width: 100%;
+          height: 100%; }
   .portfolio .back {
     position: absolute;
     bottom: 50px;
