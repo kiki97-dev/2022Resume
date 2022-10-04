@@ -7,6 +7,7 @@ $(function () {
     let portfolio = $(".portfolio");
     let isdone = true;
     let video = $(".video_box video").get(0);
+    let video2 = $(".video_box video").get(1);
     let back = $(".back");
 
     let pos_arr = [];
@@ -61,12 +62,12 @@ $(function () {
                 })
             }
             if ($(this).index() != 1 && isdone && scrollCnt <= 0) {
-                console.log(scrollCnt);
                 isdone = false;
                 transitionEffect.removeClass("on");
                 setTimeout(function () {
                     portfolio.removeClass("active");
                     video.pause();
+                    video2.pause();
 
                 }, 600);
 
@@ -76,6 +77,7 @@ $(function () {
 
             }
         } else {
+
             if ($(this).index() < sections.length && isdone) {
                 isdone = false;
 
@@ -83,6 +85,7 @@ $(function () {
                 setTimeout(function () {
                     portfolio.addClass("active");
                     video.play();
+                    video2.play();
 
                 }, 600);
 
