@@ -68,10 +68,10 @@ a {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
+  border: 1px solid #000;
   pointer-events: none;
   transition: width 0.3s, height 0.3s;
-  z-index: 9;
-  border: 1px solid #000; }
+  z-index: 9; }
   .cursor.on {
     width: 25px;
     height: 25px;
@@ -81,12 +81,13 @@ a {
 .profile {
   width: 100%;
   height: 100vh;
-  background-color: #000; }
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .profile .inner {
     width: 1200px;
-    margin: 0px auto;
-    box-sizing: border-box;
-    padding-top: 130px; }
+    box-sizing: border-box; }
     .profile .inner .greeting {
       font-size: 40px;
       font-weight: 700;
@@ -167,11 +168,12 @@ a {
   .portfolio.active {
     z-index: 2; }
   .portfolio h1 {
-    position: fixed;
-    top: 100px;
+    position: absolute;
+    top: 50%;
     left: 150px;
     font-size: 80px;
-    color: #fff; }
+    color: #fff;
+    margin-top: -350px; }
   .portfolio > ul > li {
     position: absolute;
     top: 50%;
