@@ -8,6 +8,8 @@ $(function () {
     let isdone = true;
     let video = $(".video_box video").get(0);
     let video2 = $(".video_box video").get(1);
+    let video3 = $(".video_box video").get(2);
+
     let back = $(".back");
 
     let pos_arr = [];
@@ -68,7 +70,7 @@ $(function () {
                     portfolio.removeClass("active");
                     video.pause();
                     video2.pause();
-
+                    video3.pause();
                 }, 600);
 
                 setTimeout(function () {
@@ -86,7 +88,7 @@ $(function () {
                     portfolio.addClass("active");
                     video.play();
                     video2.play();
-
+                    video3.play();
                 }, 600);
 
                 setTimeout(function () {
@@ -95,7 +97,7 @@ $(function () {
             }
 
             if (portfolio.hasClass("active")) {
-                scrollCnt += 120;
+                scrollCnt += 150;
                 $(".list>li").each(function (index) {
                     $(this).css({
                         left: pos_arr[index] - scrollCnt

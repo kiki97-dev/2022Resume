@@ -84,7 +84,8 @@ a {
   background-color: #000;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   .profile .inner {
     width: 1200px;
     box-sizing: border-box; }
@@ -156,6 +157,20 @@ a {
               text-decoration: underline; }
           .profile .inner .profile_content .profile_info ul li span {
             color: #ccc; }
+  .profile .scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    animation: slidedown 1s linear 0s infinite alternate;
+    color: #fff;
+    font-size: 14px; }
+    .profile .scroll i {
+      display: block;
+      font-weight: bold;
+      color: #fff;
+      font-size: 30px;
+      text-align: center; }
 
 .portfolio {
   position: fixed;
@@ -261,6 +276,11 @@ a {
           background-image: url(../img/sd.JPG);
           background-repeat: no-repeat;
           background-size: cover; }
+        .portfolio > ul > li .portfolio_title .video_box.kmp {
+          background-image: url(../img/kmp.JPG);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; }
         .portfolio > ul > li .portfolio_title .video_box video {
           object-fit: cover;
           width: 100%;
@@ -293,5 +313,11 @@ a {
   z-index: 8; }
   .transition_effect.on {
     top: -200%; }
+
+@keyframes slidedown {
+  0% {
+    bottom: 30px; }
+  100% {
+    bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
