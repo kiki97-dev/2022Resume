@@ -281,6 +281,11 @@ a {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center; }
+        .portfolio > ul > li .portfolio_title .video_box.VOGUE {
+          background-image: url(../img/VOGUE.JPG);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -60px; }
         .portfolio > ul > li .portfolio_title .video_box video {
           object-fit: cover;
           width: 100%;

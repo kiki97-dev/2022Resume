@@ -344,6 +344,13 @@ a {
 					background-position: center;
 				}
 
+				&.VOGUE {
+					background-image: url(../img/VOGUE.JPG);
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: -60px;
+				}
+
 				video {
 					object-fit: cover;
 					width: 100%;
